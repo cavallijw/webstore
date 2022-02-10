@@ -8,6 +8,7 @@ class CreateProducts < ActiveRecord::Migration[7.0]
       t.integer :quantity
       t.numeric :rating
       t.numeric :price
+      t.text :reviews
       t.timestamps
     end
   end
