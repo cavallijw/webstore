@@ -1,3 +1,15 @@
 <h1>Watch out world! Coming soon!</h1>
+<hr/>
 
-There are <%= Product.count %> products!!
+<ul>
+    <% @products.each do |product| %>
+        <li>
+            <strong><%=product.name%></strong> 
+        costs $<%=product.price%> dollars
+        <p><%=product.description%></p>
+        <%= image_tag(product.image, width: 50)%>
+        </li>
+    <% end %>
+</ul>
+<%= @products.count %> products and counting! Check back soon!
+<hr/>
