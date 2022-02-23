@@ -9,7 +9,11 @@
         <p><%=product.description%></p>
         <%= image_tag(product.image, width: 50)%>
         </li>
+        <%= link_to "Buy Now", buy_path(product), class: "btn btn-primary"%>
     <% end %>
 </ul>
 <%= @products.count %> products and counting! Check back soon!
 <hr/>
+
+<h2> Your shopping cart has <%=@cart.length%> items</h2>
+<%= link_to "Check Out", checkout_path%>
