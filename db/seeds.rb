@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+Product.create([
+    {
+        name: "Edgar Martinez Signed Baseball Bat",
+        description: "HOF Mariner Edgar Martinez signed baseball bat from 1995",
+        price: 2000.00,
+        quantity: 1
+    },
+    {
+        name: "2001 Commemorative Seattle Mariners Baseball Team Card Pack",
+        description: "A complete set of the 2001 Seattle Mariners Baseall Team that won 116 games",
+        price: 30.00,
+        quantity: 10
+    }
+])
