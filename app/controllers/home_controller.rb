@@ -16,5 +16,6 @@ class HomeController < ApplicationController
     end
     def checkout
         @cart = session[:cart]
+        session[:cart] = []
     end
 end
