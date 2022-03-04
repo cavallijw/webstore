@@ -1,3 +1,9 @@
 <h1>Your Cart: </h1>
 <ul>
-    <% @cart.each do |product
+<% @cart.each do |product| %>
+    <li><%=product["name"]%></li>
+<% end %>
+</ul>
+<h1>Your products are on the way!</h1>
+
+<%= link_to "Back to Home", root_path%>
