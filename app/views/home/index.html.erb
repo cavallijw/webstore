@@ -4,6 +4,7 @@
     <% @products.each do |product| %>
         <li>
             <%=product.name%>: <%= product.price %></li>
+        <li>Item(s) left: <%= product.quantity %></li>
         <%= link_to "Buy Now", buy_path(product), class: "btn btn-primary"%>
     <% end %>
 </ul>
