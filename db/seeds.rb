@@ -11,7 +11,7 @@ Product.create([
         name: "Edgar Martinez Signed Baseball Bat",
         description: "HOF Mariner Edgar Martinez signed baseball bat from 1995",
         price: 2000.00,
-        quantity: 1
+        quantity: 2
     },
     {
         name: "2001 Commemorative Seattle Mariners Baseball Team Card Pack",
