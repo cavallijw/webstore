@@ -23,4 +23,9 @@ class HomeController < ApplicationController
         end
         session[:cart] = []
     end
+    def list
+        # return products as json list
+        @products = Product.all
+        render json: @products, only: [:id,:name,:price,:quantity]
+    end
 end
